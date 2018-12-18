@@ -9,8 +9,7 @@
 [![Build Status](https://www.travis-ci.com/beccalee123/02-classes-inheritance-fp.svg?branch=master)](https://www.travis-ci.com/beccalee123/02-classes-inheritance-fp)
 * [repo](https://github.com/beccalee123/02-classes-inheritance-fp/tree/master)
 * [travis](https://www.travis-ci.com/beccalee123/02-classes-inheritance-fp)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [server](https://becca-02-classes-inheritance.herokuapp.com/)
 
 ### Modules
 #### `modulename.js`
@@ -24,8 +23,7 @@ Usage Notes or examples
 
 ### Setup
 #### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - Determined by ENV
 
 #### Running the app
 * `npm start`
