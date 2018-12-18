@@ -6,8 +6,9 @@
 ### Author: Becca Lee
 
 ### Links and Resources
+[![Build Status](https://www.travis-ci.com/beccalee123/02-classes-inheritance-fp.svg?branch=master)](https://www.travis-ci.com/beccalee123/02-classes-inheritance-fp)
 * [repo](https://github.com/beccalee123/02-classes-inheritance-fp/tree/master)
-* [travis](http://xyz.com)
+* [travis](https://www.travis-ci.com/beccalee123/02-classes-inheritance-fp)
 * [back-end](http://xyz.com)
 * [front-end](http://xyz.com)
 
