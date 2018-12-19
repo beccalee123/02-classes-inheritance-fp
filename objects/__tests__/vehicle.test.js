@@ -1,7 +1,7 @@
 'use strict';
 
-const Vehicle = require('../vehicle-constructor.js');
-// const Vehicle = require('../vehicle-class.js');
+// const Vehicle = require('../vehicle-constructor.js');
+const Vehicle = require('../vehicle-class.js');
 // const Vehicle = require('../vehicle-factory.js');
 
 
