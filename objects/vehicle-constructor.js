@@ -30,4 +30,61 @@ Motorcycle.prototype.wheelie = () => {
   return 'Wheee!';
 };
 
-module.exports = {Car, Motorcycle};
+//Flying Vehicles Constructor
+const FlyingVehicle = function(name, wheels) {
+  this.name = name;
+  this.wheels = wheels;
+};
+
+FlyingVehicle.prototype.engines = () => {
+  return 'Vroom!';
+};
+
+const Airplane = function(name) {
+  FlyingVehicle.call(this, name, 3);
+};
+
+Airplane.prototype = new FlyingVehicle();
+
+Airplane.prototype.wings = () => {
+  return 'I\'m flying!';
+};
+
+const Helicopter = function(name) {
+  FlyingVehicle.call(this, name, 0);
+};
+
+Helicopter.prototype = new FlyingVehicle();
+
+//Sea Creature Constructor
+
+const SeaCreature = function(name, watertype) {
+  this.name = name;
+  this.watertype = watertype;
+};
+
+SeaCreature.prototype.habitat = () => {
+  return 'Under the sea!';
+};
+
+const Fish = function(name) {
+  SeaCreature.call(this, name, 'fresh');
+};
+
+Fish.prototype = new SeaCreature();
+
+Fish.prototype.fins = () => {
+  return 'Multiple fins!';
+};
+
+const Lobster = function(name) {
+  SeaCreature.call(this, name, 'salt');
+};
+
+Lobster.prototype.claws = () => {
+  return 'I could pinch you!';
+};
+
+Lobster.prototype = new SeaCreature();
+
+module.exports = {Car, Motorcycle, Helicopter, Airplane, Fish, Lobster};
