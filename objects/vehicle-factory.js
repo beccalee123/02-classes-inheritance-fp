@@ -34,40 +34,69 @@ function Motorcycle(name) {
   return motorcycle;
 }
 
-let newCar = new Car('Honda');
-console.log(newCar);
+const FlyingVehicle = () => ({
+  engines() {
+    return 'Vroom!';
+  },
+});
 
-module.exports = {Car, Motorcycle};
+function Airplane(name) {
+  let airplane = Object.assign(
+    {},
+    FlyingVehicle(),
+    {name},
+    {wheels: 3},
+    {wings}
+  );
+  function wings(){
+    return 'I\'m flying!';
+  }
+  return airplane;
+}
 
-// 'use strict';
+function Helicopter(name) {
+  let helicopter = Object.assign(
+    {},
+    FlyingVehicle(),
+    {name},
+    {wheels: 0},
+  );
+  return helicopter;
+}
+
+const SeaCreature = () => ({
+  habitat() {
+    return 'Under the sea!';
+  },
+});
+
+function Fish(name) {
+  let fish = Object.assign(
+    {},
+    SeaCreature(),
+    {name},
+    {watertype: 'fresh'},
+    {fins}
+  );
+  function fins(){
+    return 'Multiple fins!';
+  }
+  return fish;
+}
+
+function Lobster(name) {
+  let lobster = Object.assign(
+    {},
+    SeaCreature(),
+    {name},
+    {watertype: 'salt'},
+    {claws}
+  );
+  function claws(){
+    return 'I could pinch you!';
+  }
+  return lobster;
+}
 
 
-// class Vehicle {
-//   constructor(name, wheels) {
-//     this.name = name;
-//     this.wheels = wheels;
-//   }
-//   drive(){
-//     return 'Moving Forward';
-//   }
-//   stop(){
-//     return 'Stopping';
-//   }
-
-// }
-
-// class Car extends Vehicle {
-//   constructor(name) {
-//     super(name, 4);
-//   }
-// }
-
-// class Motorcycle extends Vehicle {
-//   constructor(name) {
-//     super(name, 2);
-//   }
-//   wheelie(){
-//     return 'Wheee!';
-//   }
-// }
-
+module.exports = {Car, Motorcycle, Airplane, Helicopter, Fish, Lobster};
