@@ -34,8 +34,12 @@ Usage Notes or examples
 
 #### Tests
 * How do you run tests?
+Tests are run using `npm run lint`, `npm run test` locally, and Travis once it's pushed up to GitHub/before it's deployed
 * What assertions were made?
+For the vehicle.test.js modules, tests were made for the following:
+<!-- - TODO -->
 * What assertions need to be / should be made?
+- It would probably be wise to do tests for general type checking, to ensure parameters were provided, that the inputs aren't arrays, etc.
 
 #### UML
 Link to an image of the UML for your application and response to events
