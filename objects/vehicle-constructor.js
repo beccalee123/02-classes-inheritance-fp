@@ -52,11 +52,9 @@ Airplane.prototype.wings = () => {
 
 const Helicopter = function(name) {
   FlyingVehicle.call(this, name, 0);
-}
+};
 
 Helicopter.prototype = new FlyingVehicle();
-
-module.exports = {Car, Motorcycle, Helicopter, Airplane};
 
 //Sea Creature Constructor
 
